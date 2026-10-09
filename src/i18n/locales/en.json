@@ -1,0 +1,384 @@
+
+{
+  "brand": "Urban Drip",
+  "common": {
+    "search": "Search",
+    "searchPlaceholder": "Search products, brands...",
+    "account": "My account",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "login": "Sign in",
+    "logout": "Sign out",
+    "register": "Sign up",
+    "home": "Home",
+    "products": "Products",
+    "categories": "Categories",
+    "about": "About",
+    "contact": "Contact",
+    "viewAll": "View all",
+    "viewMore": "View more",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "edit": "Edit",
+    "remove": "Remove",
+    "delete": "Delete",
+    "add": "Add",
+    "continue": "Continue",
+    "back": "Back",
+    "next": "Next",
+    "close": "Close",
+    "apply": "Apply",
+    "clear": "Clear",
+    "yes": "Yes",
+    "no": "No",
+    "from": "From",
+    "off": "OFF",
+    "new": "New",
+    "bestseller": "Bestseller",
+    "free": "Free",
+    "theme": "Toggle theme",
+    "language": "Language",
+    "results": "{{count}} result",
+    "results_other": "{{count}} results"
+  },
+  "nav": {
+    "allCategories": "All categories",
+    "deals": "Deals",
+    "bestsellers": "Bestsellers",
+    "new": "New arrivals"
+  },
+  "categories": {
+    "t-shirts": {
+      "name": "T-Shirt",
+      "desc": "Everyday tees and oversized fits"
+    },
+    "hoodies": {
+      "name": "Hoodies",
+      "desc": "Comfortable streetwear hoodies"
+    },
+    "bottoms": {
+      "name": "Bottoms",
+      "desc": "Cargos, denim and relaxed fits"
+    },
+    "outerwear": {
+      "name": "Outerwear",
+      "desc": "Jackets and everyday layers"
+    },
+    "footwear": {
+      "name": "Footwear",
+      "desc": "Sneakers for your rotation"
+    },
+    "accessories": {
+      "name": "Accessories",
+      "desc": "Caps, bags and finishing touches"
+    }
+  },
+  "home": {
+    "heroBadge": "2026 Collection",
+    "heroTitle": "Own Your Style. Make Your Move.",
+    "heroSubtitle": "Discover the latest streetwear, everyday essentials and bold styles made for you.",
+    "heroCta": "Shop now",
+    "heroSecondary": "Explore collection",
+    "featuredCategories": "Shop by category",
+    "featuredProducts": "Featured products",
+    "bestsellers": "Bestsellers",
+    "newsletterTitle": "Get exclusive offers",
+    "newsletterSubtitle": "Subscribe to our newsletter for the latest drops, updates and exclusive offers.",
+    "newsletterPlaceholder": "Your email address",
+    "newsletterCta": "Subscribe",
+    "newsletterSuccess": "Subscribed! Welcome aboard.",
+    "benefits": {
+      "shippingTitle": "Free shipping",
+      "shippingDesc": "On eligible orders",
+      "secureTitle": "Secure checkout",
+      "secureDesc": "Your data is protected",
+      "returnTitle": "Easy returns",
+      "returnDesc": "Check our return policy",
+      "supportTitle": "Customer support",
+      "supportDesc": "We're here whenever you need us"
+    }
+  },
+  "catalog": {
+    "title": "All products",
+    "filters": "Filters",
+    "category": "Category",
+    "price": "Price range",
+    "brand": "Brand",
+    "rating": "Rating",
+    "ratingUp": "{{count}} stars and up",
+    "allCategories": "All",
+    "clearFilters": "Clear filters",
+    "sortBy": "Sort by",
+    "sort": {
+      "relevance": "Relevance",
+      "priceAsc": "Lowest price",
+      "priceDesc": "Highest price",
+      "newest": "Newest",
+      "rating": "Top rated"
+    },
+    "gridView": "Grid view",
+    "listView": "List view",
+    "noResults": "No products found",
+    "noResultsDesc": "Try adjusting your filters or searching for something else.",
+    "showingResults": "Showing {{shown}} of {{total}} products"
+  },
+  "search": {
+    "title": "Results for \"{{query}}\"",
+    "empty": "No results for \"{{query}}\"",
+    "emptyDesc": "Check your spelling or try different keywords.",
+    "placeholder": "What are you looking for?"
+  },
+  "product": {
+    "addToCart": "Add to cart",
+    "buyNow": "Buy now",
+    "addToWishlist": "Add to wishlist",
+    "removeFromWishlist": "Remove from wishlist",
+    "color": "Color",
+    "size": "Size",
+    "quantity": "Quantity",
+    "inStock": "In stock",
+    "lowStock": "Only {{count}} left",
+    "outOfStock": "Out of stock",
+    "sku": "SKU",
+    "brand": "Brand",
+    "reviews": "{{count}} review",
+    "reviews_other": "{{count}} reviews",
+    "tabs": {
+      "description": "Description",
+      "specs": "Specifications",
+      "reviews": "Reviews"
+    },
+    "related": "You may also like",
+    "addedToCart": "Product added to cart",
+    "selectVariant": "Select color and size",
+    "writeReview": "Write a review"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty",
+    "emptyDesc": "Add products to continue shopping.",
+    "continueShopping": "Continue shopping",
+    "item": "Item",
+    "price": "Price",
+    "quantity": "Qty",
+    "subtotal": "Subtotal",
+    "total": "Total",
+    "coupon": "Discount coupon",
+    "couponPlaceholder": "Enter code",
+    "couponApply": "Apply",
+    "couponApplied": "Coupon {{code}} applied!",
+    "couponInvalid": "Invalid coupon",
+    "couponHint": "Try: DEMO10 or URBAN20",
+    "discount": "Discount",
+    "shipping": "Shipping",
+    "shippingFree": "Free",
+    "estimatedShipping": "Estimated shipping",
+    "freeShippingHint": "Add {{amount}} more for free shipping!",
+    "checkout": "Checkout",
+    "summary": "Order summary",
+    "removed": "Item removed from cart",
+    "drawerTitle": "Cart",
+    "viewCart": "View cart"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "steps": {
+      "identification": "Your details",
+      "shipping": "Shipping",
+      "payment": "Payment",
+      "review": "Review"
+    },
+    "identification": {
+      "title": "Your details",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone number",
+      "cpf": "GSTIN (if applicable)"
+    },
+    "shippingStep": {
+      "title": "Shipping address",
+      "zip": "PIN code",
+      "street": "Street / Address",
+      "number": "House / Flat number",
+      "complement": "Landmark (optional)",
+      "district": "Area / Locality",
+      "city": "City",
+      "state": "State",
+      "method": "Delivery method",
+      "standard": "Standard delivery (5-7 days)",
+      "express": "Express delivery (1-2 days)"
+    },
+    "payment": {
+      "title": "Payment method",
+      "card": "Credit or debit card",
+      "pix": "UPI",
+      "boleto": "Cash on delivery",
+      "cardNumber": "Card number",
+      "cardName": "Name on card",
+      "cardExpiry": "Expiry",
+      "cardCvv": "CVV",
+      "pixInfo": "This is a demo checkout. No real UPI payment will be processed.",
+      "boletoInfo": "Cash on delivery is shown for demonstration only."
+    },
+    "review": {
+      "title": "Review your order",
+      "items": "Items",
+      "deliverTo": "Deliver to",
+      "paymentMethod": "Payment",
+      "placeOrder": "Place demo order"
+    },
+    "summary": "Order summary",
+    "validation": {
+      "required": "Required field",
+      "email": "Invalid email",
+      "min": "Too short",
+      "cardNumber": "Invalid card number",
+      "cvv": "Invalid CVV"
+    }
+  },
+  "confirmation": {
+    "title": "Demo order confirmed!",
+    "subtitle": "Thank you for trying Urban Drip. This is a demo order confirmation.",
+    "orderNumber": "Order number",
+    "nextSteps": "What's next",
+    "step1": "Your demo order has been recorded in this session",
+    "step2": "No real payment has been processed",
+    "step3": "Explore more products from the store",
+    "viewOrder": "View order",
+    "keepShopping": "Keep shopping",
+    "noOrder": "No order found"
+  },
+  "account": {
+    "title": "My account",
+    "overview": "Overview",
+    "orders": "Orders",
+    "addresses": "Addresses",
+    "wishlist": "Wishlist",
+    "hello": "Hello, {{name}}!",
+    "memberSince": "Customer since 2026",
+    "shortcuts": "Shortcuts",
+    "recentOrders": "Recent orders",
+    "noOrders": "You haven't placed any orders yet",
+    "noOrdersDesc": "Your demo orders will appear here when available.",
+    "orderStatus": {
+      "placed": "Order received",
+      "paid": "Payment approved",
+      "shipped": "Shipped",
+      "delivered": "Delivered"
+    },
+    "orderDate": "Date",
+    "orderTotal": "Total",
+    "orderItems": "{{count}} item",
+    "orderItems_other": "{{count}} items",
+    "viewDetails": "View details",
+    "timeline": "Tracking",
+    "addressBook": "My addresses",
+    "addAddress": "Add address",
+    "editAddress": "Edit address",
+    "defaultAddress": "Default",
+    "setDefault": "Set as default",
+    "noAddresses": "No addresses saved",
+    "noAddressesDesc": "Add an address for your demo checkout.",
+    "addressSaved": "Address saved",
+    "addressRemoved": "Address removed",
+    "emptyWishlist": "Your wishlist is empty",
+    "emptyWishlistDesc": "Save products you love to find them later.",
+    "logoutSuccess": "You've signed out",
+    "stats": {
+      "orders": "Orders",
+      "wishlist": "Wishlist",
+      "addresses": "Addresses"
+    }
+  },
+  "auth": {
+    "loginTitle": "Welcome back",
+    "loginSubtitle": "Sign in to access your account",
+    "registerTitle": "Create your account",
+    "registerSubtitle": "Sign up in seconds",
+    "name": "Full name",
+    "email": "Email",
+    "password": "Password",
+    "confirmPassword": "Confirm password",
+    "remember": "Remember me",
+    "forgot": "Forgot password?",
+    "loginCta": "Sign in",
+    "registerCta": "Sign up",
+    "loggingIn": "Signing in...",
+    "registering": "Creating account...",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "demoTitle": "Demo account:",
+    "demoHint": "or use any email and password",
+    "loginError": "Couldn't sign in. Check your details.",
+    "loginSuccess": "Signed in successfully",
+    "registerSuccess": "Account created successfully",
+    "passwordMismatch": "Passwords don't match"
+  },
+  "about": {
+    "title": "About Urban Drip",
+    "subtitle": "Streetwear, everyday essentials and styles for your individuality.",
+    "storyTitle": "Our story",
+    "story": "Urban Drip is a demo fashion storefront created to showcase a modern online shopping experience. Explore the collection, discover new styles and see how a fashion e-commerce website can look and feel.",
+    "missionTitle": "Our mission",
+    "mission": "To make discovering your next favourite style simple, enjoyable and accessible.",
+    "stats": {
+      "customers": "Happy customers",
+      "products": "Products",
+      "countries": "Countries",
+      "rating": "Average rating"
+    },
+    "valuesTitle": "Our values",
+    "values": {
+      "quality": "Quality",
+      "qualityDesc": "Style and usability come first.",
+      "trust": "Transparency",
+      "trustDesc": "A clear and simple shopping experience.",
+      "speed": "Convenience",
+      "speedDesc": "Browse products easily on any device."
+    }
+  },
+  "contact": {
+    "title": "Contact us",
+    "subtitle": "Have a question about this demo store? We're here to help.",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message submitted successfully.",
+    "infoTitle": "Store information",
+    "phone": "Phone",
+    "address": "Location",
+    "addressValue": "India — Online demo store",
+    "hours": "Business hours",
+    "hoursValue": "Demo store — online experience"
+  },
+  "footer": {
+    "tagline": "Discover your style with Urban Drip. Explore streetwear, everyday essentials and fresh looks.",
+    "shop": "Shop",
+    "support": "Support",
+    "company": "Company",
+    "help": "Help center",
+    "shipping": "Shipping",
+    "returns": "Returns",
+    "faq": "FAQ",
+    "careers": "Careers",
+    "press": "Press",
+    "privacy": "Privacy",
+    "terms": "Terms of use",
+    "newsletterTitle": "Stay in the loop",
+    "newsletterDesc": "Get the latest drops, updates and style inspiration.",
+    "rights": "© 2026 Urban Drip. All rights reserved.",
+    "payments": "Payment methods"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The page you're looking for doesn't exist or was moved.",
+    "cta": "Back to store"
+  },
+  "breadcrumb": {
+    "home": "Home"
+  }
+}
