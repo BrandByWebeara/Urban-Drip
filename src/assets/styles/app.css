@@ -1,8 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap") layer(base);
 
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap") layer(base);
 @import "tailwindcss";
 
 @custom-variant dark (&:is(.dark *));
+
+/* ==========================================
+   URBAN DRIP — PREMIUM BLACK & SILVER
+   Tailwind CSS v4
+   ========================================== */
 
 @theme {
   --font-sans: Outfit, ui-sans-serif, system-ui, sans-serif;
@@ -11,7 +16,7 @@
   --breakpoint-xsm: 425px;
   --breakpoint-3xl: 2000px;
 
-  /* Title sizes */
+  /* Typography */
   --text-title-2xl: 72px;
   --text-title-2xl--line-height: 90px;
   --text-title-xl: 60px;
@@ -29,19 +34,19 @@
   --text-theme-xs: 12px;
   --text-theme-xs--line-height: 18px;
 
-  /* Brand */
-  --color-brand-25: #f2f7ff;
-  --color-brand-50: #ecf3ff;
-  --color-brand-100: #dde9ff;
-  --color-brand-200: #c2d6ff;
-  --color-brand-300: #9cb9ff;
-  --color-brand-400: #7592ff;
-  --color-brand-500: #465fff;
-  --color-brand-600: #3641f5;
-  --color-brand-700: #2a31d8;
-  --color-brand-800: #252dae;
-  --color-brand-900: #262e89;
-  --color-brand-950: #161950;
+  /* Urban Drip: Silver brand palette */
+  --color-brand-25: #fafafa;
+  --color-brand-50: #f5f5f5;
+  --color-brand-100: #e8e8eb;
+  --color-brand-200: #d7d8dc;
+  --color-brand-300: #c0c2c8;
+  --color-brand-400: #a7a8ae;
+  --color-brand-500: #a7a8ae;
+  --color-brand-600: #85868d;
+  --color-brand-700: #65666d;
+  --color-brand-800: #45464c;
+  --color-brand-900: #29292d;
+  --color-brand-950: #111113;
 
   /* Gray scale */
   --color-gray-25: #fcfcfd;
@@ -58,7 +63,7 @@
   --color-gray-950: #0c111d;
   --color-gray-dark: #1a2231;
 
-  /* Status: success */
+  /* Success */
   --color-success-25: #f6fef9;
   --color-success-50: #ecfdf3;
   --color-success-100: #d1fadf;
@@ -69,7 +74,7 @@
   --color-success-600: #039855;
   --color-success-700: #027a48;
 
-  /* Status: error */
+  /* Error */
   --color-error-25: #fffbfa;
   --color-error-50: #fef3f2;
   --color-error-100: #fee4e2;
@@ -80,7 +85,7 @@
   --color-error-600: #d92d20;
   --color-error-700: #b42318;
 
-  /* Status: warning */
+  /* Warning */
   --color-warning-25: #fffcf5;
   --color-warning-50: #fffaeb;
   --color-warning-100: #fef0c7;
@@ -91,7 +96,7 @@
   --color-warning-600: #dc6803;
   --color-warning-700: #b54708;
 
-  /* Status: info */
+  /* Info */
   --color-blue-light-25: #f5fbff;
   --color-blue-light-50: #f0f9ff;
   --color-blue-light-100: #e0f2fe;
@@ -101,212 +106,31 @@
   --color-blue-light-700: #026aa2;
 
   /* Shadows */
-  --shadow-theme-md: 0px 4px 8px -2px rgba(16, 24, 40, 0.1),
+  --shadow-theme-md:
+    0px 4px 8px -2px rgba(16, 24, 40, 0.1),
     0px 2px 4px -2px rgba(16, 24, 40, 0.06);
-  --shadow-theme-lg: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+
+  --shadow-theme-lg:
+    0px 12px 16px -4px rgba(16, 24, 40, 0.08),
     0px 4px 6px -2px rgba(16, 24, 40, 0.03);
-  --shadow-theme-sm: 0px 1px 3px 0px rgba(16, 24, 40, 0.1),
+
+  --shadow-theme-sm:
+    0px 1px 3px 0px rgba(16, 24, 40, 0.1),
     0px 1px 2px 0px rgba(16, 24, 40, 0.06);
-  --shadow-theme-xs: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-  --shadow-theme-xl: 0px 20px 24px -4px rgba(16, 24, 40, 0.08),
+
+  --shadow-theme-xs:
+    0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+
+  --shadow-theme-xl:
+    0px 20px 24px -4px rgba(16, 24, 40, 0.08),
     0px 8px 8px -4px rgba(16, 24, 40, 0.03);
 }
 
-/* ===== Theme tokens for runtime customization ===== */
+/* ==========================================
+   THEME VARIABLES
+   ========================================== */
+
 :root {
-  --tx-sidebar-bg: #ffffff;
-  --tx-sidebar-text: #475467;
-  --tx-sidebar-text-active: #465fff;
-  --tx-sidebar-active-bg: #ecf3ff;
-  --tx-sidebar-border: #e4e7ec;
-
-  --tx-body-bg: #f9fafb;
-  --tx-card-bg: #ffffff;
-  --tx-header-bg: #ffffff;
-  --tx-border: #e4e7ec;
-  --tx-border-subtle: #f2f4f7;
-
-  --tx-text: #344054;
-  --tx-text-heading: #101828;
-  --tx-text-muted: #667085;
-}
-
-:root.dark {
-  --tx-sidebar-bg: #1a2231;
-  --tx-sidebar-text: #98a2b3;
-  --tx-sidebar-text-active: #ffffff;
-  --tx-sidebar-active-bg: rgba(70, 95, 255, 0.15);
-  --tx-sidebar-border: #1f2937;
-
-  --tx-body-bg: #101828;
-  --tx-card-bg: #1a2231;
-  --tx-header-bg: #1a2231;
-  --tx-border: #1f2937;
-  --tx-border-subtle: #1d2939;
-
-  --tx-text: #d0d5dd;
-  --tx-text-heading: #f9fafb;
-  --tx-text-muted: #98a2b3;
-}
-
-html,
-body,
-#app {
-  min-height: 100%;
-  margin: 0;
-  font-family: var(--font-sans);
-}
-
-body {
-  background-color: var(--tx-body-bg);
-  color: var(--tx-text);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-/* Hide scrollbar utility */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-track {
-  background: transparent;
-}
-::-webkit-scrollbar-thumb {
-  background: #d0d5dd;
-  border-radius: 6px;
-}
-.dark ::-webkit-scrollbar-thumb {
-  background: #344054;
-}
-
-/* Focus ring */
-.focus-ring:focus {
-  outline: none;
-  box-shadow: 0px 0px 0px 4px rgba(70, 95, 255, 0.12);
-}
-
-/* Selection */
-::selection {
-  background: var(--color-brand-500);
-  color: #fff;
-}
-
-/* Theme-aware surface utilities (resolve at runtime via --tx-* vars) */
-.surface-card {
-  background-color: var(--tx-card-bg);
-  border-color: var(--tx-border);
-}
-.surface-header {
-  background-color: var(--tx-header-bg);
-  border-color: var(--tx-border);
-}
-.surface-sidebar {
-  background-color: var(--tx-sidebar-bg);
-  border-color: var(--tx-sidebar-border);
-}
-.text-heading {
-  color: var(--tx-text-heading);
-}
-.text-body {
-  color: var(--tx-text);
-}
-.text-muted {
-  color: var(--tx-text-muted);
-}
-.border-themed {
-  border-color: var(--tx-border);
-}
-
-/* Sidebar nav item — uses sidebar-specific text tokens so palettes
-   with dark sidebar (Esmeralda, Violeta, etc.) get readable text */
-.is-sidebar-inactive {
-  color: var(--tx-sidebar-text);
-}
-.is-sidebar-inactive:hover {
-  background-color: var(--tx-sidebar-active-bg);
-  color: var(--tx-sidebar-text-active);
-}
-.is-sidebar-active {
-  background-color: var(--tx-sidebar-active-bg);
-  color: var(--tx-sidebar-text-active);
-}
-.surface-sidebar h3 {
-  color: var(--tx-sidebar-text);
-  opacity: 0.65;
-}
-.surface-sidebar [data-brand-text] {
-  color: var(--tx-sidebar-text-active);
-}
-
-/* Range slider */
-input[type='range'] {
-  accent-color: var(--color-brand-500);
-}
-
-/* Color picker thumb */
-input[type='color'] {
-  -webkit-appearance: none;
-  appearance: none;
-  border: 1px solid var(--tx-border);
-  border-radius: 6px;
-  cursor: pointer;
-  padding: 2px;
-  background: transparent;
-}
-input[type='color']::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-input[type='color']::-webkit-color-swatch {
-  border: none;
-  border-radius: 4px;
-}
-
-
-/* === image-fallback-safety-net ===========================================================
-   Cover/hero images frequently sit BEHIND light or white text. If an image
-   fails to load (offline, blocked, 404), keep a dark backdrop so the overlaid
-   text stays readable instead of vanishing against the page background. Once
-   the real image paints, this backdrop is fully covered — zero visual change.
-   ======================================================================== */
-img.object-cover {
-  background-color: #101828;
-  background-image: linear-gradient(135deg, #1d2939 0%, #101828 100%);
-  background-size: cover;
-  background-position: center;
-}
-/* === end image-fallback-safety-net === */
-
-/* =========================================
-   URBAN DRIP — PREMIUM BLACK + SILVER
-   ========================================= */
-
-@theme {
-  --color-brand-25: #fafafa;
-  --color-brand-50: #f5f5f5;
-  --color-brand-100: #e8e8eb;
-  --color-brand-200: #d7d8dc;
-  --color-brand-300: #c0c2c8;
-  --color-brand-400: #a7a8ae;
-  --color-brand-500: #a7a8ae;
-  --color-brand-600: #85868d;
-  --color-brand-700: #65666d;
-  --color-brand-800: #45464c;
-  --color-brand-900: #29292d;
-  --color-brand-950: #111113;
-}
-
-:root,
-:root.dark {
   color-scheme: dark;
 
   --tx-sidebar-bg: #111113;
@@ -325,41 +149,169 @@ img.object-cover {
   --tx-text: #d7d7dc;
   --tx-text-heading: #ffffff;
   --tx-text-muted: #a7a8ae;
+
+  --tx-accent: #a7a8ae;
+  --tx-accent-hover: #c0c2c8;
+
+  --tx-page-gutter: 24px;
+  --tx-content-width: 1440px;
 }
 
-html,
-body,
-#app {
-  background-color: #0b0b0d;
+/* Keep existing dark-mode selector compatible */
+:root.dark {
+  color-scheme: dark;
+}
+
+/* ==========================================
+   GLOBAL RESET
+   ========================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  margin: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
-  color: #d7d7dc;
+  min-height: 100vh;
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--tx-body-bg);
+  color: var(--tx-text);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+#app {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--tx-body-bg);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+img {
+  display: block;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+[type="button"],
+[type="submit"],
+[type="reset"] {
+  cursor: pointer;
+}
+
+button:disabled,
+[type="submit"]:disabled {
+  cursor: not-allowed;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  overflow-wrap: break-word;
+}
+
+table {
+  max-width: 100%;
+}
+
+::selection {
+  background-color: #c0c2c8;
+  color: #0b0b0d;
+}
+
+/* ==========================================
+   THEME-AWARE SURFACES
+   ========================================== */
 
 .surface-card {
-  background-color: #19191d;
-  border-color: #35353a;
+  background-color: var(--tx-card-bg);
+  border: 1px solid var(--tx-border);
 }
 
-.surface-header,
+.surface-header {
+  background-color: var(--tx-header-bg);
+  border-color: var(--tx-border);
+}
+
 .surface-sidebar {
-  background-color: #111113;
-  border-color: #303034;
+  background-color: var(--tx-sidebar-bg);
+  border-color: var(--tx-sidebar-border);
 }
 
 .text-heading {
-  color: #ffffff;
+  color: var(--tx-text-heading);
 }
 
 .text-body {
-  color: #d7d7dc;
+  color: var(--tx-text);
 }
 
 .text-muted {
-  color: #a7a8ae;
+  color: var(--tx-text-muted);
 }
 
+.border-themed {
+  border-color: var(--tx-border);
+}
+
+/* Sidebar navigation */
+.is-sidebar-inactive {
+  color: var(--tx-sidebar-text);
+}
+
+.is-sidebar-inactive:hover {
+  background-color: var(--tx-sidebar-active-bg);
+  color: var(--tx-sidebar-text-active);
+}
+
+.is-sidebar-active {
+  background-color: var(--tx-sidebar-active-bg);
+  color: var(--tx-sidebar-text-active);
+}
+
+.surface-sidebar h3 {
+  color: var(--tx-sidebar-text);
+  opacity: 0.65;
+}
+
+.surface-sidebar [data-brand-text] {
+  color: var(--tx-sidebar-text-active);
+}
+
+/* Silver brand utility compatibility */
 .text-brand-600,
 .text-brand-700 {
   color: #c0c2c8;
@@ -373,15 +325,33 @@ body {
   border-color: #a7a8ae;
 }
 
-.is-sidebar-active {
-  background-color: #29292d;
-  color: #ffffff;
-}
+/* ==========================================
+   FORMS AND FOCUS
+   ========================================== */
 
 input[type="range"],
 input[type="checkbox"],
 input[type="radio"] {
-  accent-color: #c0c2c8;
+  accent-color: var(--tx-accent);
+}
+
+input[type="color"] {
+  appearance: none;
+  -webkit-appearance: none;
+  border: 1px solid var(--tx-border);
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 2px;
+  background: transparent;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 4px;
 }
 
 input:focus-visible,
@@ -389,22 +359,49 @@ select:focus-visible,
 textarea:focus-visible,
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid #c0c2c8;
+  outline: 2px solid var(--tx-accent-hover);
   outline-offset: 3px;
 }
 
-::selection {
-  background-color: #c0c2c8;
-  color: #0b0b0d;
+.focus-ring:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(192, 194, 200, 0.15);
+}
+
+/* ==========================================
+   SCROLLBARS
+   ========================================== */
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #45464c;
+  border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #a7a8ae;
 }
+
+/* ==========================================
+   IMAGE FALLBACK
+   ========================================== */
 
 img.object-cover {
   background-color: #19191d;
@@ -413,26 +410,97 @@ img.object-cover {
     #29292d,
     #0b0b0d
   );
+  background-size: cover;
+  background-position: center;
 }
+
 /* ==========================================
-   URBAN DRIP — MOBILE RESPONSIVE FIX
-   Desktop styles remain unchanged
+   RESPONSIVE MEDIA SAFETY
    ========================================== */
 
-@media screen and (max-width: 767px) {
+main,
+section,
+article,
+aside,
+header,
+footer {
+  min-width: 0;
+}
+
+.flex,
+.inline-flex,
+.grid {
+  min-width: 0;
+}
+
+.flex > *,
+.inline-flex > *,
+.grid > * {
+  min-width: 0;
+}
+
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+textarea {
+  resize: vertical;
+}
+
+pre,
+code {
+  overflow-wrap: anywhere;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* ==========================================
+   TABLET — 768px TO 1023px
+   ========================================== */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  :root {
+    --tx-page-gutter: 20px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  input,
+  select,
+  textarea {
+    min-width: 0;
+  }
+}
+
+/* ==========================================
+   MOBILE — UP TO 767px
+   ========================================== */
+
+@media (max-width: 767px) {
+  :root {
+    --tx-page-gutter: 16px;
+  }
+
   html,
   body,
   #app {
     width: 100%;
-    max-width: 100%;
     min-width: 0;
-    overflow-x: clip;
+    max-width: 100%;
   }
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
+  html {
+    scroll-padding-top: 68px;
+  }
+
+  body {
+    overflow-wrap: break-word;
   }
 
   img,
@@ -441,77 +509,83 @@ img.object-cover {
     max-width: 100%;
   }
 
-  /* Prevent flex and grid children from overflowing */
-  main,
-  section,
-  article,
-  .surface-card {
-    min-width: 0;
-  }
-
-  /* Product and category grids */
-  .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  /* Product/category cards */
-  .grid > *,
-  .surface-card {
+  /* Prevent flex/grid children from forcing page overflow */
+  .flex > *,
+  .inline-flex > *,
+  .grid > * {
     min-width: 0;
     max-width: 100%;
   }
 
-  /* Product images */
-  .grid img {
+  /* Form controls fit their parent */
+  input,
+  select,
+  textarea {
+    width: 100%;
+    min-width: 0;
+  }
+
+  /* Tables can scroll inside their own wrapper */
+  .overflow-x-auto,
+  .table-responsive {
     max-width: 100%;
-    height: auto;
-    object-fit: cover;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
   }
 
-  /* Prevent long titles and prices from breaking layout */
-  .grid h1,
-  .grid h2,
-  .grid h3,
-  .grid p,
-  .grid span {
-    overflow-wrap: anywhere;
+  /* Long content */
+  h1,
+  h2,
+  h3,
+  p,
+  a,
+  button {
+    overflow-wrap: break-word;
   }
 
-  /* Responsive page padding */
-  main {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
-
-  /* Avoid oversized mobile headings */
-  h1 {
-    font-size: clamp(26px, 7vw, 38px);
-    line-height: 1.2;
-  }
-
-  h2 {
-    font-size: clamp(22px, 5.5vw, 30px);
-    line-height: 1.3;
-  }
-
-  /* Keep buttons inside their parent */
+  /* Touch usability without changing button colors */
   button,
-  a {
-    max-width: 100%;
-  }
-}
-
-@media screen and (max-width: 374px) {
-  .grid {
-    gap: 8px;
+  [role="button"],
+  input[type="button"],
+  input[type="submit"] {
+    touch-action: manipulation;
   }
 
-  main {
-    padding-left: 8px;
-    padding-right: 8px;
+  /* Keep media proportional unless component styles specify otherwise */
+  video {
+    height: auto;
   }
 }
 
 /* ==========================================
-   END MOBILE RESPONSIVE FIX
+   SMALL MOBILE — UP TO 374px
    ========================================== */
+
+@media (max-width: 374px) {
+  :root {
+    --tx-page-gutter: 12px;
+  }
+
+  html {
+    scroll-padding-top: 60px;
+  }
+}
+
+/* ==========================================
+   REDUCED MOTION ACCESSIBILITY
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
