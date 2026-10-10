@@ -136,14 +136,14 @@ export default function ProductCard({ product, layout = 'grid' }: Props) {
           <button
             type="button"
             onClick={quickAdd}
-            className="absolute inset-x-3 bottom-3 flex h-10 translate-y-2 items-center justify-center gap-2 rounded-lg bg-brand-500 text-sm font-medium text-white opacity-0 shadow-theme-md transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100"
+            className="absolute inset-x-2 bottom-2 flex h-9 translate-y-0 items-center justify-center gap-1.5 rounded-lg bg-brand-500 text-xs font-medium text-white opacity-100 shadow-theme-md transition-all duration-300 sm:inset-x-3 sm:bottom-3 sm:h-10 sm:translate-y-2 sm:gap-2 sm:text-sm sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100"
           >
             <IconBase name="cart" size={16} />
             {t('product.addToCart')}
           </button>
         )}
       </div>
-      <div className="flex flex-1 flex-col p-4">
+      <div className="flex min-w-0 flex-1 flex-col p-2.5 sm:p-4">
         <p className="text-xs font-medium uppercase tracking-wide text-muted">{product.brand}</p>
         <h3 className="mt-1 line-clamp-2 text-sm font-semibold text-heading group-hover:text-brand-600">
           {product.name}

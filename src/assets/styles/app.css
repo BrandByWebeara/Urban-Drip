@@ -414,3 +414,104 @@ img.object-cover {
     #0b0b0d
   );
 }
+/* ==========================================
+   URBAN DRIP — MOBILE RESPONSIVE FIX
+   Desktop styles remain unchanged
+   ========================================== */
+
+@media screen and (max-width: 767px) {
+  html,
+  body,
+  #app {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: clip;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+  /* Prevent flex and grid children from overflowing */
+  main,
+  section,
+  article,
+  .surface-card {
+    min-width: 0;
+  }
+
+  /* Product and category grids */
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Product/category cards */
+  .grid > *,
+  .surface-card {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  /* Product images */
+  .grid img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Prevent long titles and prices from breaking layout */
+  .grid h1,
+  .grid h2,
+  .grid h3,
+  .grid p,
+  .grid span {
+    overflow-wrap: anywhere;
+  }
+
+  /* Responsive page padding */
+  main {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* Avoid oversized mobile headings */
+  h1 {
+    font-size: clamp(26px, 7vw, 38px);
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: clamp(22px, 5.5vw, 30px);
+    line-height: 1.3;
+  }
+
+  /* Keep buttons inside their parent */
+  button,
+  a {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .grid {
+    gap: 8px;
+  }
+
+  main {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}
+
+/* ==========================================
+   END MOBILE RESPONSIVE FIX
+   ========================================== */

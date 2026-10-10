@@ -57,7 +57,7 @@ export default function HomePage() {
               THE NEW STREETWEAR EDIT
             </div>
 
-            <h1 className="max-w-2xl text-5xl font-black uppercase leading-[0.91] tracking-[-0.065em] sm:text-6xl md:text-7xl lg:text-[5.7rem]">
+            <h1 className="max-w-2xl text-[clamp(2.65rem,10vw,3rem)] font-black uppercase leading-[0.91] tracking-[-0.065em] sm:text-6xl md:text-7xl lg:text-[5.7rem]">
               OWN YOUR
               <br />
               <span className="text-[#77766f]">EVERY</span>
@@ -70,7 +70,7 @@ export default function HomePage() {
               your style, your way.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
+            <div className="mt-8 flex flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap">
               <Link
                 to="/produtos"
                 className="group inline-flex h-12 items-center justify-center gap-3 bg-[#171717] px-6 text-xs font-bold uppercase tracking-[0.12em] text-white transition hover:bg-lime-600 hover:text-black sm:h-14 sm:px-8"
