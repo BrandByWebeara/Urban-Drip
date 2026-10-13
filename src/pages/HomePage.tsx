@@ -1,20 +1,14 @@
 
 import { useState, type FormEvent } from 'react'
-
 import { Link } from 'react-router-dom'
 
 import { products, productImages } from '@/data/products'
-
 import { categories } from '@/data/categories'
-
 import { useUiStore } from '@/stores/ui'
 
 import ProductCard from '@/components/product/ProductCard'
-
 import CategoryCard from '@/components/catalog/CategoryCard'
-
 import SectionHeader from '@/components/ui/SectionHeader'
-
 import IconBase from '@/components/ui/IconBase'
 
 const heroProduct =
@@ -58,15 +52,15 @@ export default function HomePage() {
 
       {/* Hero */}
       <section className="relative w-full bg-[#eae8e1]">
-        <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-7 px-4 py-7 min-[420px]:gap-8 sm:px-6 sm:py-12 lg:grid-cols-2 lg:gap-12 lg:px-8 lg:py-20">
+        <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-6 px-4 py-7 sm:gap-8 sm:px-6 sm:py-12 lg:grid-cols-2 lg:gap-12 lg:px-8 lg:py-20">
           {/* Hero text */}
-          <div className="relative z-10 min-w-0 py-1 sm:py-4 lg:py-8">
-            <div className="mb-5 inline-flex max-w-full items-center gap-2 border border-black/15 px-2.5 py-2 text-[9px] font-bold uppercase tracking-[0.13em] min-[375px]:px-3 min-[375px]:text-[10px] min-[375px]:tracking-[0.18em] sm:mb-6 sm:text-xs sm:tracking-[0.22em]">
+          <div className="relative z-10 mx-auto w-full min-w-0 py-1 text-center sm:py-4 lg:mx-0 lg:py-8 lg:text-left">
+            <div className="mx-auto mb-5 inline-flex max-w-full items-center justify-center gap-2 border border-black/15 px-2.5 py-2 text-[9px] font-bold uppercase tracking-[0.12em] min-[375px]:px-3 min-[375px]:text-[10px] min-[375px]:tracking-[0.16em] sm:mb-6 sm:text-xs sm:tracking-[0.22em] lg:mx-0">
               <span className="h-2 w-2 shrink-0 rounded-full bg-lime-500" />
               <span>THE NEW STREETWEAR EDIT</span>
             </div>
 
-            <h1 className="max-w-full text-[clamp(2.5rem,11vw,3.5rem)] font-black uppercase leading-[0.92] tracking-[-0.065em] min-[420px]:text-[clamp(2.8rem,10vw,3.8rem)] sm:max-w-2xl sm:text-6xl md:text-7xl lg:text-[5.7rem]">
+            <h1 className="mx-auto max-w-full text-[clamp(2.7rem,12vw,3.6rem)] font-black uppercase leading-[0.92] tracking-[-0.065em] min-[420px]:text-[clamp(3rem,10vw,3.8rem)] sm:text-6xl md:text-7xl lg:mx-0 lg:text-[5.7rem]">
               OWN YOUR
               <br />
               <span className="text-[#77766f]">EVERY</span>
@@ -74,16 +68,16 @@ export default function HomePage() {
               DAY<span className="text-lime-600">.</span>
             </h1>
 
-            <p className="mt-4 max-w-md text-[13px] leading-6 text-[#55544f] min-[375px]:text-sm min-[375px]:leading-7 sm:mt-6 sm:text-base">
+            <p className="mx-auto mt-4 max-w-md text-sm leading-6 text-[#55544f] min-[375px]:leading-7 sm:mt-6 sm:text-base lg:mx-0">
               Everyday essentials. Relaxed fits. Streetwear made to express
               your style, your way.
             </p>
 
-            {/* Mobile-friendly buttons */}
-            <div className="mt-6 flex w-full flex-col gap-3 min-[420px]:flex-row min-[420px]:flex-wrap sm:mt-8">
+            {/* Hero buttons */}
+            <div className="mx-auto mt-6 flex w-full max-w-md flex-col gap-3 sm:mt-8 min-[420px]:flex-row min-[420px]:flex-wrap min-[420px]:justify-center lg:mx-0 lg:justify-start">
               <Link
                 to="/produtos"
-                className="group inline-flex h-12 w-full items-center justify-center gap-3 bg-[#171717] px-4 text-xs font-bold uppercase tracking-[0.1em] text-white transition hover:bg-lime-600 hover:text-black min-[420px]:w-auto min-[420px]:px-5 sm:h-14 sm:px-8 sm:tracking-[0.12em]"
+                className="group inline-flex h-12 w-full items-center justify-center gap-3 bg-lime-400 px-5 text-xs font-bold uppercase tracking-[0.1em] text-black transition-colors duration-200 hover:bg-lime-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black min-[420px]:w-auto sm:h-14 sm:px-8 sm:tracking-[0.12em]"
               >
                 Shop the drop
                 <IconBase name="arrow-right" size={18} />
@@ -91,14 +85,14 @@ export default function HomePage() {
 
               <Link
                 to="/produtos"
-                className="inline-flex h-12 w-full items-center justify-center border border-black/20 px-4 text-xs font-bold uppercase tracking-[0.1em] transition hover:bg-white min-[420px]:w-auto min-[420px]:px-5 sm:h-14 sm:px-8 sm:tracking-[0.12em]"
+                className="inline-flex h-12 w-full items-center justify-center border border-black/20 bg-white px-5 text-xs font-bold uppercase tracking-[0.1em] text-black transition-colors duration-200 hover:border-black hover:bg-[#e5e5e5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black min-[420px]:w-auto sm:h-14 sm:px-8 sm:tracking-[0.12em]"
               >
                 Explore collection
               </Link>
             </div>
 
             {/* Everyday uniform */}
-            <div className="mt-7 flex min-w-0 items-center gap-3 border-t border-black/10 pt-4 min-[375px]:gap-4 sm:mt-9 sm:pt-5">
+            <div className="mt-7 flex min-w-0 items-center justify-center gap-3 border-t border-black/10 pt-4 min-[375px]:gap-4 sm:mt-9 sm:pt-5 lg:justify-start">
               <div className="flex shrink-0 -space-x-2">
                 <span className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-[#eae8e1] bg-[#d3c2aa] text-[10px] font-bold">
                   U
@@ -111,13 +105,13 @@ export default function HomePage() {
                 </span>
               </div>
 
-              <p className="min-w-0 text-[9px] font-semibold uppercase leading-5 tracking-[0.1em] text-[#66655e] min-[375px]:text-[10px] min-[375px]:tracking-[0.12em] sm:text-xs sm:tracking-[0.14em]">
+              <p className="min-w-0 text-left text-[9px] font-semibold uppercase leading-5 tracking-[0.1em] text-[#66655e] min-[375px]:text-[10px] min-[375px]:tracking-[0.12em] sm:text-xs sm:tracking-[0.14em]">
                 Discover your everyday uniform
               </p>
             </div>
           </div>
 
-          {/* Hero image */}
+          {/* Hero image — desktop layout preserved */}
           <div className="relative min-w-0 w-full pt-1 sm:pt-0">
             <div className="absolute -right-1 -top-2 z-10 flex h-[68px] w-[68px] rotate-12 flex-col items-center justify-center rounded-full bg-lime-400 text-center text-[9px] font-black uppercase leading-4 tracking-wider text-black min-[375px]:-right-2 min-[375px]:h-[76px] min-[375px]:w-[76px] sm:-right-4 sm:-top-4 sm:h-24 sm:w-24 sm:text-[11px]">
               NEW
@@ -238,7 +232,7 @@ export default function HomePage() {
 
             <Link
               to="/produtos"
-              className="shrink-0 border-b border-black pb-1 text-[10px] font-bold uppercase tracking-[0.12em] sm:text-xs"
+              className="shrink-0 border-b border-black pb-1 text-[10px] font-bold uppercase tracking-[0.12em] transition-colors hover:border-lime-600 hover:text-lime-700 sm:text-xs"
             >
               Shop all ↗
             </Link>
@@ -261,12 +255,12 @@ export default function HomePage() {
       {/* Collection feature */}
       <section className="px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
         <div className="mx-auto grid max-w-7xl grid-cols-1 overflow-hidden bg-[#dcdad2] md:grid-cols-2">
-          <div className="flex flex-col items-start justify-center px-6 py-10 sm:px-10 sm:py-14 lg:px-14 lg:py-20">
-            <span className="border border-black/20 px-3 py-2 text-[10px] font-bold uppercase tracking-[0.2em]">
+          <div className="flex flex-col items-center justify-center px-5 py-9 text-center sm:px-10 sm:py-14 md:items-start md:px-10 md:text-left lg:px-14 lg:py-20">
+            <span className="inline-flex max-w-full items-center justify-center border border-black/20 px-3 py-2 text-[9px] font-bold uppercase tracking-[0.15em] min-[375px]:text-[10px] sm:tracking-[0.2em]">
               THE EVERYDAY EDIT
             </span>
 
-            <h2 className="mt-6 text-4xl font-black uppercase leading-[0.94] tracking-[-0.06em] sm:text-5xl lg:text-6xl">
+            <h2 className="mt-6 text-[clamp(2.5rem,10.5vw,3.5rem)] font-black uppercase leading-[0.94] tracking-[-0.06em] min-[420px]:text-5xl sm:text-5xl md:text-5xl lg:text-6xl">
               LESS
               <br />
               ORDINARY.
@@ -274,14 +268,14 @@ export default function HomePage() {
               <span className="text-[#77766f]">MORE YOU.</span>
             </h2>
 
-            <p className="mt-5 max-w-sm text-sm leading-7 text-[#55544f]">
+            <p className="mx-auto mt-5 max-w-sm text-sm leading-7 text-[#55544f] md:mx-0">
               From oversized tees to relaxed cargos, discover pieces that
               make everyday outfits your own.
             </p>
 
             <Link
               to="/produtos"
-              className="mt-7 inline-flex min-h-12 items-center gap-3 bg-[#171717] px-6 py-3 text-xs font-bold uppercase tracking-[0.14em] text-white transition hover:bg-lime-500 hover:text-black"
+              className="mt-7 inline-flex min-h-12 max-w-full items-center justify-center gap-3 bg-lime-400 px-5 py-3 text-center text-xs font-bold uppercase tracking-[0.08em] text-black transition-colors duration-200 hover:bg-lime-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black min-[375px]:tracking-[0.1em] sm:px-6 sm:tracking-[0.14em]"
             >
               Explore the collection
               <IconBase name="arrow-up-right" size={18} />
@@ -303,7 +297,7 @@ export default function HomePage() {
 
             <div className="absolute inset-0 bg-black/10 transition group-hover:bg-black/20" />
 
-            <span className="absolute bottom-5 right-5 flex h-12 w-12 items-center justify-center rounded-full bg-white text-black">
+            <span className="absolute bottom-5 right-5 flex h-12 w-12 items-center justify-center rounded-full bg-white text-black transition-colors group-hover:bg-lime-400">
               <IconBase name="arrow-up-right" size={22} />
             </span>
           </Link>
@@ -343,7 +337,7 @@ export default function HomePage() {
 
               <Link
                 to="/produtos?sort=rating"
-                className="shrink-0 border-b border-black pb-1 text-[10px] font-bold uppercase tracking-[0.12em] sm:text-xs"
+                className="shrink-0 border-b border-black pb-1 text-[10px] font-bold uppercase tracking-[0.12em] transition-colors hover:border-lime-600 hover:text-lime-700 sm:text-xs"
               >
                 View all ↗
               </Link>
@@ -398,7 +392,7 @@ export default function HomePage() {
 
             <button
               type="submit"
-              className="h-[52px] shrink-0 bg-lime-400 px-6 text-xs font-bold uppercase tracking-[0.12em] text-black transition hover:bg-white"
+              className="h-[52px] shrink-0 bg-lime-400 px-6 text-xs font-bold uppercase tracking-[0.12em] text-black transition-colors duration-200 hover:bg-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-lime-400"
             >
               Join the list ↗
             </button>
