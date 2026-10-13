@@ -162,9 +162,10 @@ export default function HomePage() {
         </div>
       </section>
 
+
 {/* Brand ticker */}
-<section className="w-full overflow-hidden bg-[#171717] py-4 text-white sm:py-5">
-  <div className="flex w-max min-w-full items-center justify-start gap-6 px-4 sm:justify-around sm:gap-12 sm:px-6">
+<section className="w-full bg-[#171717] py-5 text-white sm:py-6">
+  <div className="mx-auto grid w-full max-w-7xl grid-cols-2 gap-x-3 gap-y-5 px-3 sm:gap-x-8 sm:gap-y-6 sm:px-6 lg:grid-cols-4 lg:gap-8 lg:px-8">
     {[
       'BUILT FOR EVERYDAY',
       'STREET-READY FITS',
@@ -173,20 +174,19 @@ export default function HomePage() {
     ].map((text) => (
       <div
         key={text}
-        className="flex shrink-0 items-center gap-3 sm:gap-5"
+        className="flex min-w-0 items-center justify-center gap-2 text-center sm:gap-3"
       >
-        <span className="whitespace-nowrap text-[10px] font-black uppercase tracking-[0.1em] min-[375px]:text-[11px] min-[375px]:tracking-[0.12em] sm:text-sm sm:tracking-[0.16em]">
+        <span className="whitespace-nowrap text-[9px] font-black uppercase tracking-[0.04em] min-[375px]:text-[10px] min-[375px]:tracking-[0.06em] sm:text-xs sm:tracking-[0.12em]">
           {text}
         </span>
 
-        <span className="shrink-0 text-sm text-lime-400 sm:text-base">
+        <span className="shrink-0 text-xs text-lime-400 sm:text-sm">
           ✳
         </span>
       </div>
     ))}
   </div>
 </section>
-
 
       {/* Brand values */}
       <section className="border-b border-black/10 bg-[#f7f6f2]">
